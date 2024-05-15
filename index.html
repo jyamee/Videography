@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SonyA7111</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source
+        src="https://res.cloudinary.com/duyyz7f4a/video/upload/v1639041862/video_bg.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <div class="topnav">
+      <a class="active" href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#support">Support</a>
+      <a href="#shop">Shop</a>
+      <a href="#follow">Follow</a>
+    </div>
+
+    <div class="wrapper">
+      <img
+        class="logo-image"
+        alt="Logo"
+        src="https://res.cloudinary.com/duyyz7f4a/image/upload/v1639039821/music-log_xzx99y.png"
+      />
+      <h1>MUSIC = MAGIC</h1>
+      <p>Let the music move you</p>
+      <button id="myBtn">Listen</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="form-inline">
+          <p>
+            Subscribe to get a sneak peak of our platform and recieve updates on
+            our latest news and MUSIC = MAGIC launch date.
+          </p>
+
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+            required
+          />
+          <button type="submit" class="btn">Sign up now</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot">
+      <p>Music=Magic &copy;2018</p>
+    </div>
+    <script src="js/vid.js"></script>
+  </body>
+</html>
