@@ -1,25 +1,19 @@
-// Get the modal
-var modal = document.getElementById("myModal");
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    alert(
+      `Thank you for your message, ${name}! We will get back to you at ${email}.`
+    );
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+    // Here you can add code to send the form data to your server if needed.
+    // For example, using fetch() to post data to an API endpoint.
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+    // Clear the form fields
+    document.getElementById("contactForm").reset();
+  });
